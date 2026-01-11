@@ -30,3 +30,21 @@ else:
   round2=int(input("Round 2: "))
   totalScore=round1+round2
   print(totalScore)
+
+print("Hello How did you like my piece of coding ")
+stars=input("Enter one(*) to three (***) stars:")
+if stars=="*":
+  print("What should i do to improve this piece of code?")
+elif stars=="**":
+  print("Why didnt i recieve your full satisfaction?")
+elif starts=="***":
+  print("Thank you for your generous rating!")
+elif stars=="**********"
+print("You Won £100!")
+else: print("Error, Please enter 1 to 3 stars")
+
+add1=int(input("Please input a number")
+         add2=int(input("Enter a second number")
+                  adTotal=add1+add2
+print("The answer is:",addTotal)
+
