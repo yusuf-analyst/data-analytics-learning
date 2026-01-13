@@ -30,3 +30,36 @@ for i in range(len(cards)):
 # Calculate average profit
 average_profit = sum(profits) / len(profits)
 print("Average profit per card: £", average_profit)
+
+# Pokémon Card Price Trend Analysis
+# This program analyses weekly price trends and flags cards
+# that should be sold based on percentage drop.
+
+cards = ["Mewtwo SM191", "Cynthia 228/236", "Tag Team 259/236", "Lucario"]
+
+# Weekly price change (£)
+price_change = [-2.65, -0.60, 0.90, -3.97]
+
+# Weekly percentage change (%)
+percentage_change = [-1.53, -0.39, 0.68, -3.45]
+
+print("Weekly Pokémon Card Trend Analysis\n")
+
+# Cards that should be sold this week
+sell_this_week = []
+
+for i in range(len(cards)):
+    print(cards[i])
+    print(" Price change: £", price_change[i])
+    print(" Percentage change:", percentage_change[i], "%")
+# Danger rule: must sell if drop is between -2.5% and -5%
+    if percentage_change[i] <= -2.5 and percentage_change[i] >= -5:
+        print("DANGER LEVEL: SELL THIS WEEK")
+        sell_this_week.append(cards[i])
+    else:
+        print(" Status: Hold")
+
+    print()
+
+print("Summary:")
+print("Cards to sell this week:", sell_this_week)
