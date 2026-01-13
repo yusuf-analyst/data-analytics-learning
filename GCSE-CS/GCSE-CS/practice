@@ -1,0 +1,7 @@
+input("What is 1 divided by 3 to two decimal places")
+if : "0.33"
+ print("one mark awarded")
+elif : "1/3" "0.3"
+ print("half mark awarded")
+else :
+ print("no marks awarded")
