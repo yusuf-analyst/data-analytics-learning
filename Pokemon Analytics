@@ -59,7 +59,5 @@ for i in range(len(cards)):
     else:
         print(" Status: Hold")
 
-    print()
-
 print("Summary:")
 print("Cards to sell this week:", sell_this_week)
