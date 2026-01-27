@@ -13,13 +13,10 @@ Goals:
 # List of most valuable card names
 cards = ["Mewtwo", "Cythnthia", "Ns Reshiram", ""]
 
-# Purchase prices (£)
 purchase_prices = [60.70, 68.20, 101.99, 46.00]
-
-# Sale prices (£)
 sale_prices = [170.69, 150.73, 133.17, 110.99]
 
-# Calculate profit for each card
+# Calculating the porfit
 profits = []
 
 for i in range(len(cards)):
@@ -27,11 +24,7 @@ for i in range(len(cards)):
     profits.append(profit)
     print(cards[i], "profit: £", profit)
 
-# Calculate average profit
-average_profit = sum(profits) / len(profits)
-print("Average profit per card: £", average_profit)
-
-# Pokémon Card Price Trend Analysis
+# Pokémon Card price analyiss
 # This program analyses weekly price trends and flags cards
 # that should be sold based on percentage drop.
 
